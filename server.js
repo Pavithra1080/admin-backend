@@ -21,7 +21,7 @@ connetDB()
 app.use(express.json())
 app.use(
     cors({
-        origin: "https://esaf-756f.vercel.app",
+        origin: "admin-frontend-one-pied.vercel.app",
         credentials: true,
     })
     );
