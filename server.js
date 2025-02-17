@@ -21,7 +21,7 @@ connetDB()
 app.use(express.json())
 app.use(
     cors({
-        origin: "admin-frontend-one-pied.vercel.app",
+        origin: "admin-frontend-ybda.vercel.app",
         credentials: true,
     })
     );
