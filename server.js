@@ -19,7 +19,12 @@ const port = process.env.PORT || 4000
 connetDB()
 
 app.use(express.json())
-app.use(cors())
+app.use(
+    cors({
+        origin: "https://esaf-756f.vercel.app",
+        credentials: true,
+    })
+    );
 
 app.use('/api/bankAcc', bankAccRouter)
 app.use('/api/admin', adminAccRouter)
